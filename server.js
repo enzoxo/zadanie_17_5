@@ -3,7 +3,7 @@ var app = express();
 
 
 app.use('/store', function(req, res, next){
-	console.log("Hej, jestem pośrednikiem między żądaniem a odpowiedzią!");
+	console.log("Jestem pośrednikiem przy żądaniu do /store");
 	next();
 });
 
